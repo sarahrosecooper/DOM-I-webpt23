@@ -116,3 +116,8 @@ paragraphs[6].textContent = siteContent["contact"]["phone"];
 paragraphs[7].textContent = siteContent["contact"]["email"];
 
 paragraphs[8].textContent = siteContent["footer"]["copyright"];
+
+// middle image
+
+const middleImg = (document.getElementById("middle-img").src =
+  siteContent["main-content"]["middle-img-src"]);
