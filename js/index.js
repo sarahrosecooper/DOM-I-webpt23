@@ -52,7 +52,7 @@ const navBar = document.querySelectorAll("nav a");
 console.log(navBar);
 navBar.forEach((item, i) => {
   item.textContent = siteContent["nav"][`nav-item-${i + 1}`];
-  item.style.color = "green";
+  item.style.color = "#33ccff";
 });
 
 // console.log("this is the navBar", navBar)
@@ -67,7 +67,7 @@ newLink.textContent = "History";
 
 navigation.append(newLink);
 
-newLink.style.color = "green";
+newLink.style.color = "#33ccff";
 
 const newLink2 = document.createElement("a");
 
@@ -75,7 +75,7 @@ newLink2.textContent = "Pricing";
 
 navigation.prepend(newLink2);
 
-newLink2.style.color = "green";
+newLink2.style.color = "#33ccff";
 
 // H1
 const h1 = (document.querySelector("h1").textContent =
@@ -87,6 +87,7 @@ const button = (document.querySelector("button").textContent =
   siteContent["cta"]["button"]);
 
 // IMAGE BUTTON
+
 
 const ctaImg = (document.getElementById("cta-img").src =
   siteContent["cta"]["img-src"]);
@@ -139,6 +140,10 @@ paragraphs[6].textContent = siteContent["contact"]["phone"];
 paragraphs[7].textContent = siteContent["contact"]["email"];
 
 paragraphs[8].textContent = siteContent["footer"]["copyright"];
+
+paragraphs.forEach(item => {
+  item.style.color = "#0000cc"
+})
 
 // middle image
 
