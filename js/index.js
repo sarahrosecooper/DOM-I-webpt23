@@ -46,12 +46,13 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-// UPDATE THE NAV BAR
+// UPDATE THE NAV BAR && CHANGE COLOR TO GREEN
 
 const navBar = document.querySelectorAll("nav a");
 console.log(navBar);
 navBar.forEach((item, i) => {
   item.textContent = siteContent["nav"][`nav-item-${i + 1}`];
+  item.style.color = "green";
 });
 
 // H1
