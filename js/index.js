@@ -55,6 +55,28 @@ navBar.forEach((item, i) => {
   item.style.color = "green";
 });
 
+// console.log("this is the navBar", navBar)
+
+// PREPEND AND APPEND CHILD TO NAV BAR
+
+const navigation = document.querySelector("nav");
+
+const newLink = document.createElement("a");
+
+newLink.textContent = "History";
+
+navigation.append(newLink);
+
+newLink.style.color = "green";
+
+const newLink2 = document.createElement("a");
+
+newLink2.textContent = "Pricing";
+
+navigation.prepend(newLink2);
+
+newLink2.style.color = "green";
+
 // H1
 const h1 = (document.querySelector("h1").textContent =
   siteContent["cta"]["h1"]);
